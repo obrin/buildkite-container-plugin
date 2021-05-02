@@ -11,6 +11,7 @@ steps:
   - label: 'Deploy'
     plugins:
       - https://github.com/obrin/buildkite-container-plugin.git#v1.0.0:
+          app: APP_NAME
 ```
 
 ## Developing
