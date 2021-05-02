@@ -3,6 +3,6 @@ set -euo pipefail
 
 TAG="${BUILDKITE_PLUGIN_BUILDKITE_DEPLOY_PLUGIN_GIT_TAG:-$BUILDKITE_COMMIT}"
 APP="${BUILDKITE_PLUGIN_BUILDKITE_DEPLOY_PLUGIN_GIT_APP:-$BUILDKITE_PIPELINE_NAME}"
-IMAGE: jordanyong/${APP}:${TAG}
+IMAGE="jordanyong/${APP}:${TAG}"
 
 pack build ${IMAGE} --builder gcr.io/buildpacks/builder:v1 && docker push ${IMAGE}
