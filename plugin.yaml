@@ -1,0 +1,11 @@
+name: container builder
+description: Build containers
+author: https://github.com/obrin
+requirements: []
+configuration:
+  properties:
+    tag:
+      type: string
+    app:
+      type: string
+  additionalProperties: false
